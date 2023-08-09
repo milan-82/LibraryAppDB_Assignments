@@ -385,7 +385,7 @@ public class BrowserUtil {
         return getElementsText(select.getOptions());
     }
 
-    public static void selectOptionDropdown(WebElement element,String category){
+    public static void selectOptionDropdown(WebElement element, String category){
 
         Select select=new Select(element);
 
