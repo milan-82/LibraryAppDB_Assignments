@@ -1,4 +1,4 @@
-package com.library.steps.UserStepDefs;
+package com.library.steps;
 
 import com.library.utility.DB_Util;
 import io.cucumber.java.en.Given;
