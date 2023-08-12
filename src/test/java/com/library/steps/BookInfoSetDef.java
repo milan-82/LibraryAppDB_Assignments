@@ -36,7 +36,7 @@ public class BookInfoSetDef {
 
     @Then("book information must match the Database")
     public void book_information_must_match_the_database() {
-        String queryForSpecificBook= "select * from books where name = 'Harry'";
+        String queryForSpecificBook= "select * from books where name = 'Book Borrow 2'";
 
        // String bookInfoForEach = ConfigurationReader.getProperty("bookInfoForEach");
 

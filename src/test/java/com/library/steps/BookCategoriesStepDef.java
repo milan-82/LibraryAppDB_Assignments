@@ -18,7 +18,9 @@ public class BookCategoriesStepDef {
 
     @When("the user navigates to {string} page")
     public void the_user_navigates_to_page(String moduleName) {
+
         bookPage.navigateModule(moduleName);
+        BrowserUtil.waitFor(2);
 
     }
 
@@ -47,6 +49,6 @@ public class BookCategoriesStepDef {
 
         Assert.assertEquals(expectedCategories,actualCategories);
 
-
     }
+
 }

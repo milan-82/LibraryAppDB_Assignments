@@ -51,12 +51,12 @@ public class BookPage extends BasePage {
 
 
     public WebElement editBook(String book) {
-        String xpath = "(//td[.='Harry']//..)[1]/td[1]";
+        String xpath = "//td[3][.='" + book + "']/../td/a";
         return Driver.getDriver().findElement(By.xpath(xpath));
     }
 
     public WebElement borrowBook(String book) {
-        String xpath = "//td[3][.='" + book + "']/../td/a";
+        String xpath = "//td[3][.='Book Borrow 2']/../td/a";
         return Driver.getDriver().findElement(By.xpath(xpath));
     }
 
