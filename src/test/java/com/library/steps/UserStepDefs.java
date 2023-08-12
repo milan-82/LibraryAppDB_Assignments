@@ -34,7 +34,7 @@ public class UserStepDefs {
     @Then("verify all users has unique ID")
     public void verify_all_users_has_unique_id() {
 
-        String query = "select count(id) from users";
+        String query = "select count(distinct id) from users";
         DB_Util.runQuery(query);
 
         String expectedUserCount = DB_Util.getFirstRowFirstColumn();
