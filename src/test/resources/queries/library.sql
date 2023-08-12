@@ -15,8 +15,9 @@ WHERE is_returned = 0;
 select name
 from book_categories;
 
+#us04
 select * from books
-where name = 'Harry';
+where name = 'Book Borrow 2';
 
 select b.name,b_c.name from books b
 inner join book_categories b_c

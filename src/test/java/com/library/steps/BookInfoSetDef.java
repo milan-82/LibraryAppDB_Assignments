@@ -38,8 +38,6 @@ public class BookInfoSetDef {
     public void book_information_must_match_the_database() {
         String queryForSpecificBook= "select * from books where name = 'Book Borrow 2'";
 
-       // String bookInfoForEach = ConfigurationReader.getProperty("bookInfoForEach");
-
         DB_Util.runQuery(queryForSpecificBook);
 
         Map<String, String> mapDataFromDB = DB_Util.getRowMap(1);
