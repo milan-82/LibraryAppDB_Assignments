@@ -60,6 +60,10 @@ public class BookPage extends BasePage {
         return Driver.getDriver().findElement(By.xpath(xpath));
     }
 
+    public String getBookInfo(String infoName){
+        String locator = "//form[@id='edit_book_form']//label[.='"+infoName+"']/../input";
+      return   Driver.getDriver().findElement(By.xpath(locator)).getAttribute("value");
+    }
 
 
 }
