@@ -41,4 +41,7 @@ select name from book_categories where id = (select book_category_id from books 
 
 
 
+#us06
+select name, isbn,year,author from books
+where name = 'Book Borrow 2';
 
